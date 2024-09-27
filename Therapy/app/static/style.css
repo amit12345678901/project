@@ -1,0 +1,1215 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+h1 ,h2, h3, h4{
+    font-family: "Bree Serif", serif;
+}
+h5, h6{
+    font-family: "Satisfy", cursive;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.nav-box{
+  background: rgba(0,0,0,0.7);
+ height: 60px;
+}
+.navbar .navbar-nav{
+  padding-right: 30px;
+}
+.nav-item .nav-link{
+font-size: 20px;
+font-weight: 600;
+text-transform: capitalize;
+color: #000;
+}
+.banner{
+  height: 680px;
+  background: linear-gradient(to top,rgba(0,0,0,0.4),rgba(0,0,0,0.6)),url(images/successful-medical-team.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.banner .text-box{
+  padding: 400px 0;
+  text-align: center;
+}
+.banner .text-box h3{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: capitalize;
+text-shadow: 2px 2px 2px #000;
+word-spacing: 5px;
+margin: 0 250px;
+}
+.about{
+  padding: 80px;
+  background-color: #fff;
+  text-align: center;
+}
+.about .text-box h3{
+ color: #0cb8b6;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: capitalize;
+text-shadow: none;
+word-spacing: 15px;
+
+}
+.about .text-box p{
+  text-align: center;
+ color: #ff056d;
+   font-size: 20px;
+   font-weight: 600;
+   text-transform: capitalize;
+   text-align: center;
+ }
+ .about .text p{
+  padding: 20px 0;
+  margin: 0 200px;
+  color: rgb(142, 142, 142);
+   font-size: 19px;
+   font-weight: 400;
+   text-transform: inherit;
+
+ }
+ .about .pink-box{
+  background-color: #ff056d ;
+  color: #ffffff;
+  padding:60px 20px;
+ }
+ .about .blue-box{
+background-color: #0cb8b6;
+  color: #ffffff;
+  padding:60px 20px;
+ }
+ .about .texts{
+  margin-top: 40px;
+ }
+ .about .texts h4{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+ }
+ .about .pink-box, .blue-box p{
+  text-align: center;
+  font-size: 17px;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: #fff;
+ }
+.care{
+  padding: 80px;
+  text-align: center;
+}
+.care .care-1{
+  height: 500px;
+  background: linear-gradient(to top,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(images/bann1.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.care .care-2{
+  height: 500px;
+  background: linear-gradient(to top,rgba(0,0,0,0.3),rgba(0,0,0,0.1)),url(images/bann2.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.care .text{
+  padding:160px 40px;
+color: #fff;
+}
+.care .text h4{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+ }
+ .care .text p{
+  text-align: center;
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #fff;
+ }
+ /* .care .btn{
+  padding: 6px 12px;
+ }
+ .care .btn a{
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 300;
+  background-color: #fff;
+ } */
+  .modal-title{
+    color: #000;
+  }
+  .modal p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+  }
+.Achievements{
+  padding: 40px;
+  background-color: #0cb8b6;
+}
+.Achievements .text-box{
+  text-align: center;
+  padding: 20px 0;
+}
+.Achievements .text-box h3{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: capitalize;
+text-shadow:none;
+word-spacing: 15px;
+padding-bottom: 25px;
+}
+.Achievements .text-number{
+  margin: 0 30px;
+}
+.Achievements .text-number p{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: capitalize;
+text-shadow:none;
+word-spacing: 15px;
+text-align: center;
+}
+.Achievements .text-number h5{
+color: #ffffff;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: capitalize;
+text-shadow:none;
+text-align: end;
+}
+.Achievements .text-number hr{
+  height: 3px;
+  color: #000;
+}
+ .black{
+color: #000;
+text-shadow:none;
+font-weight: 600;
+}
+.green{
+  color: #0cb8b6;
+text-shadow: none;
+font-weight: 600;
+}
+.appointment{
+  background-color: #000;
+}
+.appointment img{
+height: 450px;
+width: 100%;
+border-bottom: 2px solid #fff;
+}
+.form{
+  background-color: #000;
+ 
+  padding: 20px;
+  color: #fff;
+}
+.form h3{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: capitalize;
+text-shadow: none;
+word-spacing: 15px;
+}
+.form .form-box p{
+  text-align: start;
+  font-weight: 500;
+  font-size: 20px;
+  color: #9a9a9a;
+  text-transform: capitalize;
+}
+input[type="date"] {
+  display: inline-block;
+}
+.date-time input{
+ padding: 6px 70px;
+ border-radius: 5px;
+ 
+}
+.form button{
+  width: 200px;
+}
+.Events{
+  padding: 80px;
+  background-color: #fff;
+  text-align: center;
+}
+.Events .text h3{
+  padding-bottom: 15px;
+  color: #000000;
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: capitalize;
+text-shadow:none;
+word-spacing: 15px;
+}
+.Events .img-box {
+  box-shadow: 2px 2px 10px #9a9a9a;
+margin-top: 20px;
+}
+.Events img{
+  width: 100%;
+  height: 400px;
+}
+.Events .img-box2 {
+  margin-top: 90px;
+  box-shadow: 2px 2px 10px #9a9a9a;
+}
+.Events .information{
+  padding: 10px 0 ;
+}
+.contact{
+  padding: 80px;
+  background-color: #efefef;
+  text-align: center;
+}
+.contact button{
+  background-color: rgb(255, 174, 0);
+  padding: 5px 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+.contact input{
+  padding: 10px 10px;
+}
+.contact h3{
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  color: #0cb8b6;
+}
+.contact .contact-from{
+  margin: 0 300px;
+}
+.footer{
+  padding: 40px;
+  background-color: #000000;
+}
+.footer .mail {
+  padding-left: 10px;
+  border-left: 2px solid #fff;
+}
+.footer .mail a ,p{
+text-align: start;
+color: #fff;
+font-size: 17px;
+font-weight: 400;
+padding-left: 10px;
+}
+.footer .mail i{
+color: #fff;
+}
+.logo{
+  color: #ffffff;
+}
+
+.care .care-1 h4{
+ color: #fff;
+ font-size: 40px;
+ font-weight: 500;
+ text-transform: capitalize;
+ text-align: center;
+}
+.care .care-1 .day{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: start;
+}
+.care .care-1.time{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: end;
+}
+.care .care-1 .timing{
+ padding: 20px 0;
+ margin: 0 30px;
+}
+.care .care-1 hr{
+  margin-bottom: -20px ;
+}
+/* media query */
+@media screen and (max-width:1200px ){
+  
+.nav-item .nav-link{
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 10px 0;
+  }
+  .banner{
+    height: 600px;
+  }
+  .banner .text-box{
+    padding: 350px 0;
+  }
+  .banner .text-box h3{
+    font-size: 30px;
+    font-weight: 500;
+  word-spacing: 15px;
+  margin: 0 250px;
+  }
+  .about{
+    padding: 60px;
+  }
+  .about .text-box h3{
+    font-size: 30px;
+    font-weight: 600;
+  word-spacing: 10px;
+  margin: 0 150px;
+  }
+  .about .text-box p{
+     font-size: 20px;
+     font-weight: 600;
+  letter-spacing: 0px;
+   text-align: center;
+   }
+   .about .text p{
+    padding: 20px 0;
+    margin: 0 100px;
+     font-size: 19px;
+     font-weight: 400;
+     word-spacing: none;
+  
+   }
+   .about .pink-box{
+    padding:30px 10px;
+   }
+   .about .blue-box{
+    padding:30px 10px;
+   }
+   .about .texts{
+    margin-top: 40px;
+   }
+   .about .texts h4{
+    font-size: 25px;
+    font-weight: 400;
+   }
+   .about .pink-box p{
+    font-size: 17px;
+    font-weight: 300;
+   }
+  .care{
+    padding: 60px;
+    text-align: center;
+  }
+  .care .care-1{
+    height: 400px;
+  }
+  
+.care .care-1 h4{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 500;
+ }
+ .care .care-1 .day{
+   font-size: 15px;
+   font-weight: 700;
+   text-transform: capitalize;
+   text-align: start;
+ }
+ .care .care-1.time{
+   font-size: 15px;
+   font-weight: 700;
+ }
+ .care .care-1 .timing{
+  padding: 20px 0;
+  margin: 0 20px;
+ }
+ .care .care-1 hr{
+   margin-bottom: -20px ;
+ }
+  .care .care-2 {
+    height: 400px;
+  }
+  .care .text{
+    padding: 80px 40px;
+  }
+  .care .text h4{
+    font-size: 25px;
+    font-weight: 400;
+   }
+   .care .text p{
+    font-size: 17px;
+    font-weight: 500;
+   }
+   .care .btn{
+    padding: 6px 12px;
+   }
+   .care .btn a{
+    text-transform: capitalize;
+    font-size: 17px;
+    font-weight: 500;
+   }
+  .Achievements{
+    padding: 40px;
+  }
+  .Achievements .text-box{
+    padding: 20px 0;
+  }
+  .Achievements .text-box h3{
+    font-size: 30px;
+    font-weight: 500;
+ 
+  word-spacing: 15px;
+  padding-bottom: 25px;
+  }
+  .Achievements .text-number{
+    margin: 0 20px;
+  }
+  .Achievements .text-number p{
+    font-size: 30px;
+    font-weight: 500;
+  word-spacing: 15px;
+  }
+  .Achievements .text-number h5{
+    font-size: 30px;
+    font-weight: 400;
+  }
+  .Achievements .text-number hr{
+    height: 3px;
+  }
+   .black{
+  font-weight: 600;
+  }
+  .green{
+  font-weight: 600;
+  }
+  .appointment img{
+  height: 400px;
+  width: 100%;
+  }
+  .form{
+    padding: 20px;
+  }
+  .form h3{
+    font-size: 30px;
+    font-weight: 500;
+  text-shadow: none;
+  word-spacing: 15px;
+  }
+  .form .form-box p{
+    text-align: start;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  input[type="date"] {
+    display: inline-block;
+  }
+  .date-time input{
+    padding: 6px 40px;
+   }
+  .form button{
+    width: 200px;
+  }
+  .Events{
+    padding: 60px;
+    text-align: center;
+  }
+  .Events .text h3{
+    padding-bottom: 15px;
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: capitalize;
+  text-shadow:none;
+  word-spacing: 15px;
+  }
+  .Events .img-box {
+  margin-top: 20px;
+  }
+  .Events img{
+    width: 100%;
+    height: 300px;
+  }
+  .Events .img-box2 {
+    margin-top: 90px;
+  }
+  .Events .information{
+    padding: 10px 0 ;
+  }
+  .contact{
+    padding: 60px;
+   
+  }
+  .contact h3{
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+  }
+  .contact button{
+    padding: 5px 12px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+  
+  }
+  .contact input{
+    padding: 10px 10px;
+
+  }
+  .contact .contact-from{
+    margin: 0 150px;
+  }
+  .footer{
+    padding: 40px;
+  }
+  .footer .mail {
+    padding-left: 10px;
+  }
+  .footer .mail a ,p{
+  font-size: 17px;
+  font-weight: 400;
+  padding-left: 10px;
+  }
+}
+@media screen and (max-width:992px ){
+  .nav-item .nav-link{
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 5px 0;
+    }
+    .banner{
+      height: 500px;
+    }
+    .banner .text-box{
+      padding: 300px 0;
+    }
+    .banner .text-box h3{
+      font-size: 20px;
+      font-weight: 500;
+    word-spacing: 5px;
+    margin: 0 150px;
+    text-align: center;
+    }
+    .about{
+      text-align: center;
+      padding: 40px;
+    }
+    .about .text-box h3{
+      font-size: 25px;
+      font-weight: 600;
+    word-spacing: 10px;
+    margin: 0 100px;
+    }
+    .about .text-box p{
+       font-size: 17px;
+       font-weight: 600;
+    letter-spacing: 0px;
+     }
+     .about .text p{
+      padding: 15px 0;
+      margin: 0 60px;
+       font-size: 17px;
+       font-weight: 400;
+     }
+     .about .pink-box{
+      padding:30px 10px;
+     }
+     .about .blue-box{
+      padding:30px 20px;
+     }
+     .about .texts{
+      margin-top: 30px;
+     }
+     .about .texts h4{
+      font-size: 25px;
+      font-weight: 400;
+     }
+     .about .pink-box p{
+      font-size: 17px;
+      font-weight: 300;
+     }
+    .care{
+      padding: 40px;
+      text-align: center;
+    }
+    .care .care-1{
+      height: 400px;
+    }
+    .care .care-2{
+     display: none;
+    }
+    .care .text{
+      padding: 40px 20px;
+    }
+    .care .text h4{
+      font-size: 25px;
+      font-weight: 400;
+     }
+     .care .text p{
+      font-size: 17px;
+      font-weight: 400;
+     }
+     .care .btn{
+      padding: 6px 12px;
+     }
+     .care .btn a{
+      text-transform: capitalize;
+      font-size: 17px;
+      font-weight: 300;
+     }
+    .Achievements{
+      padding: 40px;
+    }
+    .Achievements .text-box{
+      padding: 20px 0;
+    }
+    .Achievements .text-box h3{
+      font-size: 30px;
+      font-weight: 500;
+      text-transform: capitalize;
+    word-spacing: 15px;
+    padding-bottom: 25px;
+    }
+    .Achievements .text-number{
+      margin: 0 20px;
+    }
+    .Achievements .text-number p{
+      font-size: 30px;
+      font-weight: 500;
+    word-spacing: 15px;
+    }
+    .Achievements .text-number h5{
+      font-size: 20px;
+      font-weight: 400;
+    }
+    .Achievements .text-number hr{
+      height: 3px;
+    }
+     .black{
+    font-weight: 600;
+    }
+    .green{
+    font-weight: 600;
+    }
+    .appointment img{
+    height: 400px;
+    width: 100%;
+    }
+    .form{
+      padding: 20px;
+    }
+    .form h3{
+      font-size: 30px;
+      font-weight: 500;
+      text-transform: capitalize;
+    text-shadow: none;
+    word-spacing: 15px;
+    }
+    .form .form-box p{
+      text-align: start;
+      font-weight: 500;
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+    input[type="date"] {
+      display: inline-block;
+    }
+    .date-time input{
+      padding: 6px 20px;
+     }
+    .form button{
+      width: 180px;
+    }
+    .Events{
+      padding: 40px;
+      text-align: center;
+    }
+    .Events .text h3{
+      padding-bottom: 15px;
+      font-size: 40px;
+      font-weight: 500;
+      text-transform: capitalize;
+    text-shadow:none;
+    word-spacing: 15px;
+    }
+    .Events .img-box {
+    margin-top: 20px;
+    }
+    .Events img{
+      width: 100%;
+      height: 200px;
+    }
+    .Events .img-box2 {
+      margin-top: 90px;
+    }
+    .Events .information{
+      padding: 10px 0 ;
+    }
+    .contact{
+      padding: 60px;
+     
+    }
+    .contact h3{
+      font-size: 30px;
+      font-weight: 600;
+      text-transform: capitalize;
+      padding-bottom: 10px;
+    }
+    .contact button{
+      padding: 5px 12px;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 10px;
+    
+    }
+    .contact input{
+      padding: 10px 10px;
+  
+    }
+    .contact .contact-from{
+      margin: 0 100px;
+    }
+    .footer{
+      padding: 30px;
+    }
+    .footer .mail {
+      padding-left: 10px;
+    }
+    .footer .mail a ,p{
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 10px;
+    }
+  }
+
+  @media screen and (max-width:768px ){
+    .nav-item .nav-link{
+      font-size: 17px;
+      font-weight: 500;
+      margin: 0 5px 0;
+      }
+      .sideber{
+        background-color: #000;
+      }
+      .banner{
+        height: 400px;
+      }
+      .banner .text-box{
+        padding: 230px 0;
+      }
+      .banner .text-box h3{
+        font-size: 20px;
+        font-weight: 500;
+      word-spacing: 15px;
+      margin: 0 100px;
+      }
+      .about{
+        text-align: center;
+        padding: 20px;
+      }
+      .about .text-box h3{
+        font-size: 25px;
+        font-weight: 600;
+      word-spacing: 10px;
+      }
+      .about .text-box p{
+         font-size: 17px;
+         font-weight: 500;
+      letter-spacing: 0px;
+       }
+       .about .text p{
+        padding: 15px 0;
+        margin: 0 60px;
+         font-size: 17px;
+         font-weight: 400;
+       }
+       .about .pink-box{
+        padding:10px 10px;
+         border: 5px solid #fff;
+       }
+       .about .pink-box{
+      margin-bottom: 10px;
+       }
+       .about .blue-box{
+        padding:10px 10px;
+        margin-bottom: 10px;
+        border: 5px solid #fff;
+       }
+       .about .texts{
+        margin-top: 30px;
+       }
+       .about .texts h4{
+        font-size: 25px;
+        font-weight: 400;
+       }
+       .about .pink-box p{
+        font-size: 17px;
+        font-weight: 300;
+       }
+       .about .blue-box p{
+        font-size: 17px;
+        font-weight: 300;
+        text-align: center;
+       }
+      .care{
+        padding: 20px;
+        text-align: center;
+      }
+      .care .care-1{
+        height: 350px;
+      }
+      .care .care-2{
+       display: none;
+      }
+      .care .text{
+        padding: 40px 20px;
+      }
+      .care .text h4{
+        font-size: 13px;
+        font-weight: 700;
+       }
+       .care .text p{
+        font-size: 13px;
+        font-weight: 600;
+       }
+       
+      .Achievements{
+        padding: 40px;
+      }
+      .Achievements .text-box{
+        padding: 10px 0;
+      }
+      .Achievements .text-box h3{
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: capitalize;
+      word-spacing: 15px;
+      padding-bottom: 25px;
+      }
+      .Achievements .text-number{
+        margin: 0 20px;
+      }
+      .Achievements .text-number p{
+        font-size: 20px;
+        font-weight: 600;
+      word-spacing: 10px;
+      text-align: start;
+      }
+      .Achievements .text-number h5{
+        font-size: 20px;
+        font-weight: 600;
+        text-align: end;
+      }
+      .Achievements .text-number hr{
+        height: 3px;
+      }
+       .black{
+      font-weight: 600;
+      }
+      .green{
+      font-weight: 600;
+      }
+      .appointment img{
+      height: 300px;
+      width: 100%;
+      }
+      .form{
+        padding: 20px;
+      }
+      .form h3{
+        font-size: 30px;
+        font-weight: 500;
+        text-transform: capitalize;
+      text-shadow: none;
+      word-spacing: 15px;
+      }
+      .form .form-box p{
+        text-align: start;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: capitalize;
+      }
+      
+      .date-time input{
+        padding: 6px 20px;
+       }
+      .form button{
+        width: 180px;
+      }
+      .Events{
+        padding: 40px;
+        text-align: center;
+      }
+      .Events .text h3{
+        padding-bottom: 15px;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: capitalize;
+      text-shadow:none;
+      word-spacing: 15px;
+      }
+      .Events .information h5 {
+      display: none;
+      }
+      .Events .information h4 {
+       font-size: 15px;
+        }
+      .Events .img-box {
+      margin-top: 20px;
+      }
+      .Events img{
+        width: 100%;
+        height: 200px;
+      }
+      .Events .img-box2 {
+        margin-top: 50px;
+      }
+      .Events .information{
+        padding: 10px 0 ;
+      }
+      .contact{
+        padding: 20px;
+       
+      }
+      .contact h3{
+        font-size: 30px;
+        font-weight: 600;
+        text-transform: capitalize;
+        padding-bottom: 10px;
+      }
+      .contact button{
+        padding: 5px 10px;
+        font-size: 17px;
+        font-weight: 600;
+        border-radius: 10px;
+      
+      }
+      .contact input{
+        padding: 10px 10px;
+    
+      }
+      .contact .contact-from{
+        margin: 0 60px;
+      }
+      .footer{
+        padding: 20px;
+      }
+      .footer .mail {
+        padding-left: 10px;
+        border-left: none;
+      }
+      .footer .mail a ,p{
+      font-size: 15px;
+      font-weight: 600;
+      padding-left: 10px;
+      }
+      .footer .logo{
+        font-size: 20px;
+        text-align: center;
+      }
+      
+    }
+
+
+
+    @media screen and (max-width:576px ){
+        .banner{
+          height: 300px;
+        }
+        .banner .text-box{
+          padding: 180px 0;
+        }
+        .banner .text-box h3{
+          font-size: 15px;
+          font-weight: 400;
+        word-spacing:5px;
+        margin: 0 50px;
+        }
+        .about{
+          padding: 10px;
+        }
+        .about .text-box h3{
+          font-size: 20px;
+        }
+        .about .text-box p{
+           font-size: 12px;
+           font-weight: 500;
+         }
+         .about .text p{
+          padding: 5px 0;
+          margin: 0 20px;
+           font-size: 12px;
+         }
+         .about .pink-box{
+          padding:5px;
+          border: 40px 10px solid #fff;
+         }
+         .about .blue-box{
+          padding:5px;
+          border: 40px 10px solid #fff;
+         }
+         .about .texts{
+          margin-top: 20px;
+         }
+         .about .texts h4{
+          font-size: 17px;
+         }
+         .about .pink-box p{
+          font-size: 10px;
+          font-weight: 500;
+         }
+         .about .blue-box p{
+          font-size: 10px;
+          font-weight: 500;
+         }
+        .care{
+          padding: 10px;
+        }
+        .care .care-1{
+          height: 350px;
+        }
+        .care .text{
+          padding: 40px 20px;
+        }
+        .care .text h4{
+          font-size: 10px;
+          font-weight: 700;
+         }
+         .care .text p{
+          font-size: 10px;
+          font-weight: 700;
+         }
+         
+        .Achievements{
+          padding: 10px;
+        }
+        .Achievements .text-box h3{
+          font-size: 20px;
+          font-weight: 500;
+        word-spacing: 5px;
+        padding-bottom: 20px;
+        }
+        .Achievements .text-number{
+          margin: 0 40px;
+        }
+        .Achievements .text-number p{
+          font-size: 17px;
+          font-weight: 600;
+        word-spacing: 10px;
+        }
+        .Achievements .text-number h5{
+          font-size: 20px;
+          font-weight: 500;
+        }
+       
+         .black{
+        font-weight: 500;
+        }
+        .green{
+        font-weight: 500;
+        }
+        .appointment img{
+        height: 250px;
+        width: 100%;
+        }
+        .form{
+          padding: 10px;
+        }
+        .form h3{
+          font-size: 20px;
+          font-weight: 500;
+          text-align: center;
+        word-spacing: 5px;
+        }
+        .form .form-box p{
+          text-align: start;
+          font-weight: 400;
+          font-size: 15px;
+        }
+        .form button{
+          width: 100px;
+        }
+        .Events{
+          padding: 15px;
+        }
+        .Events .text h3{
+          padding-top: 10px;
+          font-size: 20px;
+          font-weight: 600;
+        word-spacing: 5px;
+        }
+        .Events .information h4 {
+         font-size: 10px;
+          }
+        .Events .img-box {
+        margin-top: -11px;
+        }
+        .Events img{
+          width: 100%;
+          height: 130px;
+        }
+        .Events .img-box2 {
+          margin-top: 31px;
+        }
+
+        .contact{
+          padding: 10px;
+        }
+        .contact h3{
+          font-size: 20px;
+          font-weight: 600;
+          text-transform: capitalize;
+          padding-bottom: 10px;
+        }
+        .contact input{
+          padding: 5px;
+      
+        }
+        .contact .contact-from{
+          margin: 0 40px;
+        }
+        .footer{
+          padding: 10px;
+        }
+        .footer .mail {
+          padding-left: 10px;
+          padding-bottom: 5px;
+          border-left: none;
+        }
+        .footer .mail a ,p{
+        font-size: 17px;
+        font-weight: 400;
+        text-align: start;
+        padding-left: 10px;
+        }
+        .footer .logo{
+          font-size: 20px;
+          text-align: center;
+        }
+        .date-time input{
+          padding: 6px 10px;
+         }
+      }
