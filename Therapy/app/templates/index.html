@@ -1,353 +1,415 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href={% static "style.css" %}>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <title>Therapy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href={% static "style.css" %}>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <title>Therapy</title>
 </head>
+
 <body>
-  
-     <!---navber-->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container nav-box">
-          <a class="navbar-brand logo fs-2" href="#"> <h3>Therapy</h3> </a>
-          <button class="navbar-toggler sideber" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <!--navbar icone-->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav justify-content-lg-end align-items-center flex-grow-1 fs-4 ps-3">
-              <li class="nav-item scroll hvr-underline-form-center">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link scroll hvr-underline-form-center" href="#about">about</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link scroll hvr-underline-form-center" href="#appointment">Appointment</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="#contact">Contact </a>
-              </li>
-            </ul>
-  
-          </div>
-        </div>
-      </nav>
+
+  <!---navber-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container nav-box">
+      <a class="navbar-brand logo fs-2" href="#">
+        <h3>Therapy</h3>
+      </a>
+      <button class="navbar-toggler sideber" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!--navbar icone-->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav justify-content-lg-end align-items-center flex-grow-1 fs-4 ps-3">
+          <li class="nav-item scroll hvr-underline-form-center">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link scroll hvr-underline-form-center" href="#about">about</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link scroll hvr-underline-form-center" href="#appointment">Appointment</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#contact">Contact </a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
 
   <!-- carousel start -->
-   <section class="banner">
-  <div class="text-box"> <h3><marquee behavior="slide" direction="up" loop="1" scrollamount="12">May the universe grant you good health and a long and happy life. 
-  </marquee></h3>
-  </div>
-</section>
-  <!-- carousel-end -->
-<!-- about-page  -->
-<section class="about" id="about">
-<div class=" container text-box">
-  <h3>W<span class="black">hat</span> W<span class="black">e</span> D<span class="black">o</span></h3>
-   <p>Making your life easier</p>
-   <div class="text">
-    <p>Suspendisse ornare sed purus a imperdiet. Integer viverra nisi orci, in volutpat leo ornare vitae. Nulla faucibus, arcu at consequat vulputate, turpis metus blandit urna.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-   </div>
-  </div>
-   <div class="row">
-<div class="col-md-3 col-sm-6 pink-box">
-  <div class="texts">
-  <h4>Chronic Pains</h4>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-</div>
-</div>
-<div class="col-md-3 col-sm-6 blue-box"><div class="texts">
-  <h4>Sports Injuries</h4>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-</div></div>
-<div class="col-md-3 col-sm-6 pink-box"><div class="texts">
-  <h4>Post-Trauma</h4>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-</div></div>
-<div class="col-md-3 col-sm-6 blue-box"><div class="texts">
-  <h4>Hip Pain</h4>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-</div></div>
-</div>
-</section>
-<!-- care -->
- <section class="care">
-<div class="container">
-  <div class="row">
-    <div class="col-lg-6 col-sm-12 care-1">
-      <div class="list-1">
-        <h4>our time</h4>
-        <div class="row timing">
-          <div class="col-5"><p class="day"> Monday</p></div>
-          <div class="col-7"><p class="time"> 9:30am -8:30pm</p></div>
-          <hr>
-          <div class="col-5"><p class="day"> tuesday</p></div>
-          <div class="col-7"><p class="time"> 9:30am -8:30pm</p></div>
-          <hr>
-          <div class="col-5"><p class="day">wednesday</p></div>
-          <div class="col-7"><p class="time"> 9:30am -8:30pm</p></div>
-          <hr>
-          <div class="col-5"><p class="day">thursday</p></div>
-          <div class="col-7"><p class="time"> 9:30am -8:30pm</p></div>
-          <hr>
-          <div class="col-5"><p class="day">friday</p></div>
-          <div class="col-7"><p class="time"> 9:30am -8:30pm</p></div>
-          <hr>
-          <div class="col-5"><p class="day">saturday</p></div>
-          <div class="col-7"><p class="time"> 9:30am -8:30pm</p></div>
-          <hr>
-          <div class="col-5"><p class="day">sunday</p></div>
-          <div class="col-7"><p class="no-time"> close</p></div>
-          <hr>
-        </div>
+  <section class="banner">
+    <div class="text-box">
+      <h3>
+        <marquee behavior="slide" direction="up" loop="1" scrollamount="12">May the universe grant you good health and a
+          long and happy life.
+        </marquee>
+      </h3>
     </div>
-  </div>
-    <!--  -->
-    <div class="col-lg-6  care-2">
-      <div class="text">
-        <h4>Conditions-treated</h4>
-        <p>Providing appropriate health care for adults, seniors and children</p>
-
-      <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          find out more
-        </button>
-      </div>
-      <!--  -->
-      <!-- Scrollable modal -->
-<!-- Button trigger modal -->
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h3 class="modal-title" id="exampleModalLabel">Therapy</h3>
-        
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
-          " Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-    <!--  -->
-  </div>
-</div>
- </section>
- <!-- appointment -->
-  <section class="appointment" id="appointment">
-    <div class="container-fluid">
-<div class="row">
-  <div class="col-md-5"><div class="img-box">
-    <img src="static/images/doctor-helping-patient-rehabilitation.jpg" class="img-fluid" alt="">
-  </div></div>
-  <div class="col-md-7 form">
-    <div class="form-box">
-      <h3><span class="green">M</span>ake <span class="green">A</span>n <span class="green">A</span>ppointment</h3>
-    <div class="row g-3">
-      <p>service and date</p>
-      <div class="col-6">
-        <select class="form-select" aria-label="Default select example">
-          <option selected>please select your service</option>
-          <option value="1">post-trauma</option>
-          <option value="2">post-recovery</option>
-          <option value="3">Migraines</option>
-          <option value="4">chronic pains</option>
-        </select>
-      </div>
-      <div class="col-md-6">
-        <form class="date-time">
-          <input type="date" id="date" name="date" onchange="formatDate(this.value)">
-          <input type="hidden" id="formattedDate" name="formattedDate">
-      </form>
-      </div>
-      <!--  -->
-   
-      <form class="row g-3">
-        <p>Personal Information</p>
-        <div class="col-md-6">
-          
-          <input type="text" name="First Name"class="form-control" placeholder="First Name" id="validationDefault01"  required>
-        </div>
-        <div class="col-md-6">
-          
-          <input type="text" name="Last Name"class="form-control" id="validationDefault02" placeholder="Last Name">
-        </div>
-        <div class="col-md-6">
-          <div class="input-group">
-            <span class="input-group-text" id="inputGroupPrepend2">@</span>
-            <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
-          </div>
-        </div>
-          <div class="col-md-6">
-          <input type="password" name="Password" placeholder="Password" class="form-control" id="exampleInputPassword1">
-          </div>
-          <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-      </form>
-     
-    </div>
-    </div>
-    </div>
-  </div>
-</div>
   </section>
-<!-- footer part -->
- <section class="Achievements">
-
-<div class="container text-box">
-<h3><span class="black">O</span>ur <span class="black">A</span>chievements</h3>
-<div class="row">
-  <div class="col-md-4">
-    <div class="text-number">
-    <p id="count">2800 </p>
-  <hr> <h5>Treatments</h5>
-
-</div>
-</div>
-
-<div class="col-md-4">
-  <div class="text-number">
-  <p id="count">2500 </p>
-<hr><h5> Healthy Patients </h5>
-
-</div>
-</div>
-
-<div class="col-md-4">
-  <div class="text-number">
-  <p id="count">100 </p>
-<hr> <h5>Qualified Staff
-  </h5>
-</div>
-</div>
-<!--  -->
-</div>
-</div>
- </section>
- <!-- Events -->
-  <section class="Events">
-<div class="container">
-  <div class="row">
-    <div class="col-6">
-<div class="img-box">
-  <img src="static/images/event1.jpg"class="img-fluid" alt="">
-  <div class="information">
-    <h4>The Back Pain & Curing It</h4>
-    <h5>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</h5>
-  </div>
-</div>
-    </div>
-    <div class="col-6">
+  <!-- carousel-end -->
+  <!-- about-page  -->
+  <section class="about" id="about">
+    <div class=" container text-box">
+      <h3>W<span class="black">hat</span> W<span class="black">e</span> D<span class="black">o</span></h3>
+      <p>Making your life easier</p>
       <div class="text">
-        <h3> <span class="green">O</span>ur <span class="green">L</span>atest <span class="green">E</span>vents</h3>
+        <p>Suspendisse ornare sed purus a imperdiet. Integer viverra nisi orci, in volutpat leo ornare vitae. Nulla
+          faucibus, arcu at consequat vulputate, turpis metus blandit urna.Duis aute irure dolor in reprehenderit in
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+          sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <div class="img-box">
-        <img src="static/images/event2.jpg" class="img-fluid" alt="">
-        <div class="information">
-          <h4>Most Common Therapies</h4>
-    <h5>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</h5>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 pink-box">
+        <div class="texts">
+          <h4>Chronic Pains</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 blue-box">
+        <div class="texts">
+          <h4>Sports Injuries</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 pink-box">
+        <div class="texts">
+          <h4>Post-Trauma</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 blue-box">
+        <div class="texts">
+          <h4>Hip Pain</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
     </div>
-    <!--  -->
-    <div class="col-6">
-      <div class="img-box">
-        <img src="static/images/aromaterapia-scaled.jpg"class="img-fluid" alt="">
-        <div class="information">
-          <h4>The Back Pain & Curing It</h4>
-          <h5>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</h5>
-        </div>
-      </div>
+  </section>
+  <!-- care -->
+  <section class="care">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-sm-12 care-1">
+          <div class="list-1">
+            <h4>our time</h4>
+            <div class="row timing">
+              <div class="col-5">
+                <p class="day"> Monday</p>
+              </div>
+              <div class="col-7">
+                <p class="time"> 9:30am -8:30pm</p>
+              </div>
+              <hr>
+              <div class="col-5">
+                <p class="day"> tuesday</p>
+              </div>
+              <div class="col-7">
+                <p class="time"> 9:30am -8:30pm</p>
+              </div>
+              <hr>
+              <div class="col-5">
+                <p class="day">wednesday</p>
+              </div>
+              <div class="col-7">
+                <p class="time"> 9:30am -8:30pm</p>
+              </div>
+              <hr>
+              <div class="col-5">
+                <p class="day">thursday</p>
+              </div>
+              <div class="col-7">
+                <p class="time"> 9:30am -8:30pm</p>
+              </div>
+              <hr>
+              <div class="col-5">
+                <p class="day">friday</p>
+              </div>
+              <div class="col-7">
+                <p class="time"> 9:30am -8:30pm</p>
+              </div>
+              <hr>
+              <div class="col-5">
+                <p class="day">saturday</p>
+              </div>
+              <div class="col-7">
+                <p class="time"> 9:30am -8:30pm</p>
+              </div>
+              <hr>
+              <div class="col-5">
+                <p class="day">sunday</p>
+              </div>
+              <div class="col-7">
+                <p class="no-time"> close</p>
+              </div>
+              <hr>
+            </div>
           </div>
-          <div class="col-6">
-            <div class="img-box2">
-              <img src="static/images/aromaterapia-scaled.jpg"class="img-fluid" alt="">
-              <div class="information">
-                <h4>The Back Pain & Curing It</h4>
-                <h5>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</h5>
+        </div>
+        <!--  -->
+        <div class="col-lg-6  care-2">
+          <div class="text">
+            <h4>Conditions-treated</h4>
+            <p>Providing appropriate health care for adults, seniors and children</p>
+
+            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              find out more
+            </button>
+          </div>
+          <!--  -->
+          <!-- Scrollable modal -->
+          <!-- Button trigger modal -->
+
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="exampleModalLabel">Therapy</h3>
+
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+                    aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit
+                    esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+                    " Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+                    consequatur.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+  </section>
+  <!-- appointment -->
+  <section class="appointment" id="appointment">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-5">
+          <div class="img-box">
+            <img src="static/images/doctor-helping-patient-rehabilitation.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-md-7 form">
+          <div class="form-box">
+            <h3><span class="green">M</span>ake <span class="green">A</span>n <span class="green">A</span>ppointment
+            </h3>
+            <div class="row g-3">
+              <p>service and date</p>
+              <div class="col-6">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>please select your service</option>
+                  <option value="1">post-trauma</option>
+                  <option value="2">post-recovery</option>
+                  <option value="3">Migraines</option>
+                  <option value="4">chronic pains</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <form class="date-time">
+                  <input type="date" id="date" name="date" onchange="formatDate(this.value)">
+                  <input type="hidden" id="formattedDate" name="formattedDate">
+                </form>
+              </div>
+              <!--  -->
+
+              <form class="row g-3">
+                <p>Personal Information</p>
+                <div class="col-md-6">
+
+                  <input type="text" name="First Name" class="form-control" placeholder="First Name"
+                    id="validationDefault01" required>
                 </div>
-  </div>
-</div>
+                <div class="col-md-6">
+
+                  <input type="text" name="Last Name" class="form-control" id="validationDefault02"
+                    placeholder="Last Name">
+                </div>
+                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer part -->
+  <section class="Achievements">
+
+    <div class="container text-box">
+      <h3><span class="black">O</span>ur <span class="black">A</span>chievements</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="text-number">
+            <p id="count">2800 </p>
+            <hr>
+            <h5>Treatments</h5>
+
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="text-number">
+            <p id="count">2500 </p>
+            <hr>
+            <h5> Healthy Patients </h5>
+
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="text-number">
+            <p id="count">100 </p>
+            <hr>
+            <h5>Qualified Staff
+            </h5>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </section>
+  <!-- Events -->
+  <section class="Events">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="img-box">
+            <img src="static/images/event1.jpg" class="img-fluid" alt="">
+            <div class="information">
+              <h4>The Back Pain & Curing It</h4>
+              <h5>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="text">
+            <h3> <span class="green">O</span>ur <span class="green">L</span>atest <span class="green">E</span>vents</h3>
+          </div>
+          <div class="img-box">
+            <img src="static/images/event2.jpg" class="img-fluid" alt="">
+            <div class="information">
+              <h4>Most Common Therapies</h4>
+              <h5>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</h5>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="col-6">
+          <div class="img-box">
+            <img src="static/images/aromaterapia-scaled.jpg" class="img-fluid" alt="">
+            <div class="information">
+              <h4>The Back Pain & Curing It</h4>
+              <h5>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="img-box2">
+            <img src="static/images/aromaterapia-scaled.jpg" class="img-fluid" alt="">
+            <div class="information">
+              <h4>The Back Pain & Curing It</h4>
+              <h5>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
   <!-- contact -->
-   <section class="contact" id="contact">
- <div class="contaner contact-from">
-  <h3><span class="black">c</span>ontact</h3>
-  <!-- form start -->
-    <div class="row">
-  <div class="col-md-12">
-   <div class="input-enter">
-    <div class="row">
-      <div class="col-6">
-        <input type="text" class="form-control" id="name" placeholder="Name" aria-label="Name">
+  <section class="contact" id="contact">
+    <div class="contaner contact-from">
+      <h3><span class="black">c</span>ontact</h3>
+      <!-- form start -->
+      <form class="row" id="contactForm">
+        {% csrf_token %}
+        <div class="col-md-12">
+          <div class="input-enter">
+            <div class="row">
+              <div class="col-6">
+                <input type="text" class="form-control" id="name" placeholder="Name" name="name" aria-label="Name">
+              </div>
+              <div class="col-6">
+                <input type="text" class="form-control" id="email" placeholder="Email" name="email" aria-label="Email">
+              </div>
+            </div>
+            <br>
+            <br>
+            <div class="phone-number">
+              <input type="Number" class="form-control" id="phone" placeholder="Phone Number" name="phone" aria-label="Phone Number">
+            </div>
+            <br>
+            <div class="message">
+              <label for="exampleFormControlTextarea1" class="form-label" id="mssg"></label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Message"
+                aria-label="Message" name="message"></textarea>
+            </div>
+            <br>
+            <div class="submit-btn">
+              <button type="submit" id="msg">send message</button>
+            </div>
+
+          </div>
+        </div>
+      </form>
+      <!-- form end -->
+    </div>
+  </section>
+  <!-- footer part -->
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <h3 class="logo">Therapy</h3>
+        </div>
+        <div class="col-md-4">
+          <div class="mail">
+            <p>Tamluk, Purba Medinipur,
+              721636, India.</p>
+            <a href="mailto:example@mail.com"><i class="fa fa-envelope" aria-hidden="true"></i> therapy@gmail.com</a>
+            <br>
+            <a href="tell:(077) 806 5658">
+              <i class="fa-solid fa-phone"></i> (077) 806 5658</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5114709257805!2d87.92330737397565!3d22.296488243036112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0295ab08717571%3A0xe573bc5394b8f9b8!2sTamluk%20District%20Court!5e0!3m2!1sen!2sin!4v1727190111012!5m2!1sen!2sin"
+              width="100%" height="150" style="border: 2px;;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
       </div>
-      <div class="col-6">
-        <input type="text" class="form-control" id="email" placeholder="Email" aria-label="Email">
-      </div>
     </div>
-  <br>
-  <br>
-  <div class="phone-number">
-    <input type="Number" class="form-control" id="phone" placeholder="Phone Number" aria-label="Phone Number">
-  </div>
-  <br>
-  <div class="message">
-    <label for="exampleFormControlTextarea1" class="form-label" id="mssg"></label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"  placeholder="Message" aria-label="Message"></textarea>
-  </div>
-  <br>
-  <div class="submit-btn">
-  <button type="submit" id="msg">send message</button>
-  </div>
-  
-  </div>
-  </div>
-    </div>
-  <!-- form end -->
- </div>
-   </section>
-<!-- footer part -->
- <section class="footer">
-<div class="container">
-  <div class="row">
-    <div class="col-md-2">
-      <h3 class="logo">Therapy</h3>
-    </div>
-    <div class="col-md-4">
-      <div class="mail">
-        <p>Tamluk, Purba Medinipur,
-          721636, India.</p>
-        <a href="mailto:example@mail.com"><i class="fa fa-envelope" aria-hidden="true"></i>  therapy@gmail.com</a> <br>
-        <a href="tell:(077) 806 5658">
-          <i class="fa-solid fa-phone"></i> (077) 806 5658</a>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.5114709257805!2d87.92330737397565!3d22.296488243036112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0295ab08717571%3A0xe573bc5394b8f9b8!2sTamluk%20District%20Court!5e0!3m2!1sen!2sin!4v1727190111012!5m2!1sen!2sin" width="100%" height="150" style="border: 2px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    </div>
-  </div>
-</div>
- </section>
- <!--  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </section>
+  <!--  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
 <script>
   function formatDate(value) {
@@ -361,46 +423,73 @@
 
     // Display formatted date for demonstration purposes
     alert(`Selected date: ${formattedDate}`);
-}
+  }
 </Script>
 <!-- appointment -->
- <script>
-  $(document).ready(function() {
-    $("#submit").click(function(event) {
-        event.preventDefault(); // Prevent form submission for demonstration
-        let firstName = $('#validationDefault01').val();
-        let lastName = $('#validationDefault02').val();
-        let username = $('#validationDefaultUsername').val();
-        let password = $('#exampleInputPassword1').val();
-
-        if (firstName == "" || lastName == "" || username == "" || password == "") {
-            alert("Please fill in all the fields.");
-        } else {
-            alert("Form submitted successfully!");
-        }
-    });
-});
- </script>
-<!-- contact box form -->
 <script>
-  $(document).ready(function(){
-    $('#msg').click(function(event){
+  $(document).ready(function () {
+    $("#submit").click(function (event) {
+      event.preventDefault(); // Prevent form submission for demonstration
+      let firstName = $('#validationDefault01').val();
+      let lastName = $('#validationDefault02').val();
+      let username = $('#validationDefaultUsername').val();
+      let password = $('#exampleInputPassword1').val();
+
+      if (firstName == "" || lastName == "" || username == "" || password == "") {
+        alert("Please fill in all the fields.");
+      } else {
+        alert("Form submitted successfully!");
+      }
+    });
+  });
+</script>
+<!-- contact box form -->
+<!-- <script>
+  $(document).ready(function () {
+    $('#msg').click(function (event) {
       event.preventDefault(); // Prevent the default form submission
-  
+
       // Get form values
       let name = $('#name').val();
       let email = $('#email').val();
       let phone = $('#phone').val();
       let message = $('#exampleFormControlTextarea1').val();
-  
+
       // Simple validation
       if (name === "" || email === "" || phone === "" || message === "") {
         alert("Please fill in all the fields.");
       } else {
-          alert("Form submitted successfully!");
+        alert("Form submitted successfully!");
       }
+    });
   });
-});
-  </script>
+</script> -->
+
+
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const formData = new FormData(this);
+
+      fetch("{% url 'contact' %}", {
+          method: 'POST',
+          body: formData,
+          headers: {
+              'X-CSRFToken': '{{ csrf_token }}'
+          }
+      })
+      .then(response => response.json())
+      .then(data => {
+          if (data.message) {
+              alert(data.message);
+              window.location.reload();  // Reload after successful submission
+          } else if (data.errors) {
+              alert(data.errors);
+          }
+      })
+      .catch(error => console.error('Error:', error));
+  });
+</script>
 <!-- number scroll -->
- 
