@@ -204,57 +204,50 @@
   <!-- appointment -->
   <section class="appointment" id="appointment">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-5">
-          <div class="img-box">
-            <img src="static/images/doctor-helping-patient-rehabilitation.jpg" class="img-fluid" alt="">
-          </div>
-        </div>
-        <div class="col-md-7 form">
-          <div class="form-box">
-            <h3><span class="green">M</span>ake <span class="green">A</span>n <span class="green">A</span>ppointment
-            </h3>
-            <div class="row g-3">
-              <p>service and date</p>
-              <div class="col-6">
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>please select your service</option>
-                  <option value="1">post-trauma</option>
-                  <option value="2">post-recovery</option>
-                  <option value="3">Migraines</option>
-                  <option value="4">chronic pains</option>
-                </select>
-              </div>
-              <div class="col-md-6">
-                <form class="date-time">
-                  <input type="date" id="date" name="date" onchange="formatDate(this.value)">
-                  <input type="hidden" id="formattedDate" name="formattedDate">
-                </form>
-              </div>
-              <!--  -->
-
-              <form class="row g-3">
-                <p>Personal Information</p>
-                <div class="col-md-6">
-
-                  <input type="text" name="First Name" class="form-control" placeholder="First Name"
-                    id="validationDefault01" required>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="img-box">
+                    <img src="static/images/doctor-helping-patient-rehabilitation.jpg" class="img-fluid" alt="">
                 </div>
-                <div class="col-md-6">
-
-                  <input type="text" name="Last Name" class="form-control" id="validationDefault02"
-                    placeholder="Last Name">
-                </div>
-                <button type="submit" class="btn btn-primary" id="submit">Submit</button>
-              </form>
-
             </div>
-          </div>
+            <div class="col-md-7 form">
+                <div class="form-box">
+                    <h3><span class="green">M</span>ake <span class="green">A</span>n <span class="green">A</span>ppointment</h3>
+                    <form method="POST" id="appointmentForm">
+                        {% csrf_token %}
+                        <div class="row g-3">
+                            <p>Service and Date</p>
+                            <div class="col-6">
+                                <select name="service" class="form-select" required>
+                                    <option selected disabled>Please select your service</option>
+                                    <option value="1">Post-Trauma</option>
+                                    <option value="2">Post-Recovery</option>
+                                    <option value="3">Migraines</option>
+                                    <option value="4">Chronic Pains</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="date" name="date" required>
+                            </div>
+                        </div>
+
+                        <p>Personal Information</p>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <input type="text" name="first_name" class="form-control" placeholder="First Name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="last_name" class="form-control" placeholder="Last Name">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
-  <!-- footer part -->
+</section>
+
   <section class="Achievements">
 
     <div class="container text-box">
@@ -427,21 +420,30 @@
 </Script>
 <!-- appointment -->
 <script>
-  $(document).ready(function () {
-    $("#submit").click(function (event) {
-      event.preventDefault(); // Prevent form submission for demonstration
-      let firstName = $('#validationDefault01').val();
-      let lastName = $('#validationDefault02').val();
-      let username = $('#validationDefaultUsername').val();
-      let password = $('#exampleInputPassword1').val();
+ document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-      if (firstName == "" || lastName == "" || username == "" || password == "") {
-        alert("Please fill in all the fields.");
-      } else {
-        alert("Form submitted successfully!");
-      }
-    });
-  });
+    const formData = new FormData(this);
+
+    fetch("{% url 'appointment' %}", {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'X-CSRFToken': '{{ csrf_token }}',
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.message) {
+            alert(data.message);
+            window.location.reload();  // Reload after successful submission
+        } else if (data.errors) {
+            alert(data.errors);
+        }
+    })
+    .catch(error => console.error('Error:', error));
+});
+
 </script>
 <!-- contact box form -->
 <!-- <script>
